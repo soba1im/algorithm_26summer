@@ -109,6 +109,26 @@ refactor: 프린터 문제 코드 개선
 
 ---
 
+## 📅 Study Schedule
+
+- **Regular Meeting:** Every **Tuesday** 18:00–19:00
+- **Platform:** Offline
+- **Activities:**
+  - 📖 알고리즘 개념 학습
+  - 💻 문제 풀이 및 코드 리뷰
+  - 🧠 접근 방식 및 시간복잡도 토론
+  - 📝 오답 노트 공유
+
+---
+
+## 📒 Study Note
+
+코딩테스트 개념 정리, 문제 풀이 및 학습 기록은 아래 Notion에서 확인할 수 있습니다.
+
+🔗 **[ALGORITHM STUDY](https://marred-war-a7c.notion.site/ALGORITHM-STUDY-3902b0a225b2804fb5a4de78ef65b0bc?source=copy_link)**
+
+---
+
 ## ⭐ Goal
 
 > 단순히 문제를 푸는 것이 아니라, 왜 이 알고리즘을 선택했는지 설명할 수 있는 개발자가 되는 것.
