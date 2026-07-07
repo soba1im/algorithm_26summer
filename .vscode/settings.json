@@ -1,0 +1,6 @@
+{
+    // GitHub Copilot만 끄기
+    "github.copilot.enable": {
+        "*": false
+    }
+}
