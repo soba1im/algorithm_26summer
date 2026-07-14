@@ -5,11 +5,7 @@
 using namespace std;
 
 /*
-    [First Attempt]
-    채점 결과
-    정확성: 83.3
-    효율성: 8.3 -> 효율성에서 fail
-    합계: 91.7 / 100.0
+    91.7점 -> 효율성 오답
 */
 
 bool solution(vector<string> phone_book) {
@@ -19,17 +15,17 @@ bool solution(vector<string> phone_book) {
     // Step 1) 배열 정렬
     sort(phone_book.begin(), phone_book.end());
 
-    // Step 2) 특정 전화번호에 대해 전번 길이만큼 다른 전번들을 자르고 일치하는지 확인
+    // Step 2) 각 전화번호에 대해
     for (int i = 0; i < N-1; i++) {
-        int length = size(phone_book[i]); // 해당 전번 길이 저장
-        vector<string> cut_string; // 자른 전번을 저장할 배열
+        int length = size(phone_book[i]);
+        vector<string> cut_string;
 
-        // 자른 전번을 저장
+        // 그 전번 길이 만큼 뒤의 나머지 전번들을 자른 결과를 배열에 삽입
         for (int j = i+1; j < N; j++) {
             cut_string.push_back(phone_book[j].substr(0, length));
         }
 
-        // 일치하는지 확인
+        // 그 결과와 해당 전번이 같은지 체크 -> 같으면 answer를 false로 바꾸고 마침
         if (find(cut_string.begin(), cut_string.end(), phone_book[i]) != cut_string.end()) {
             answer = false;
             break;
@@ -39,5 +35,3 @@ bool solution(vector<string> phone_book) {
 
     return answer;
 }
-
-int main
